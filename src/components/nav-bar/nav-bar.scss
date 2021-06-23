@@ -17,6 +17,7 @@
             flex-direction: row;
             .logo {
                 width: 30%;
+                min-width: 190px;
             }
             .range {
                 
@@ -59,6 +60,7 @@
         .menu-icon {
             border: 2px solid rgb(132, 70, 91);
             border-radius: 3px;
+            padding: 5px;
 
             :hover {
                 background-color: powderblue;
