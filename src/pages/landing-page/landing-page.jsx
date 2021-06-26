@@ -1,6 +1,7 @@
 import React from "react";
 import "./landing-page.scss";
 import service from "../../assets/service.png";
+import { Button } from "react-bootstrap";
 
 const LandingPage = () => {
   return (
@@ -9,6 +10,9 @@ const LandingPage = () => {
         <div className="title">
           <span className="name">ChapChap Store</span>
           <p className="objective">Free And Easy Delivery</p>
+          <Button variant="outline-dark" className="start-button">
+            Start Shopping
+          </Button>
         </div>
         <img src={service} alt="service" />
       </div>

@@ -18,6 +18,7 @@
             .logo {
                 width: 30%;
                 min-width: 190px;
+                cursor: pointer;
             }
             .range {
                 
@@ -46,6 +47,7 @@
         
         .cart-icon {
             margin-right: 20px;
+            cursor: pointer;
         }
     }
     
@@ -56,15 +58,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        
         .menu-icon {
             border: 2px solid rgb(132, 70, 91);
             border-radius: 3px;
             padding: 5px;
-
-            :hover {
-                background-color: powderblue;
-            }
+            cursor: pointer;
         }
         
         .info {
@@ -78,15 +77,17 @@
             .services {
                 border-right: 2px solid rgb(137, 20, 20);
                 padding: 5px 10px 5px 5px;
+                cursor: pointer;
             }
             
             .contact {
                 
                 border-right: 2px solid rgb(137, 20, 20);
                 padding: 5px 10px 5px 10px;
+                cursor: pointer;
             }
         }
-
+        
         
     }
 }

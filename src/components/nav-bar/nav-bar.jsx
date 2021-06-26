@@ -5,13 +5,37 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Search } from "semantic-ui-react";
 import CartIcon from "../cart-icon/cart-icon/cart-icon.component";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useHistory } from "react-router-dom";
 
 const NavBar = () => {
+  const history = useHistory();
+
+  const handleMenuIcon = () => {
+    history.push("/menu");
+  };
+
+  const handleContactClick = () => {
+    history.push("/contact");
+  };
+
+  const handleServicesClick = () => {
+    history.push("/service");
+  };
+
+  const handleLogoClick = () => {
+    history.push("/");
+  };
+
   return (
     <div className="nav-bar">
       <div className="nav-description">
         <div className="section-1">
-          <img src={logo} alt="logo" className="logo" />
+          <img
+            src={logo}
+            alt="logo"
+            onClick={handleLogoClick}
+            className="logo"
+          />
           <div className="range">
             <HiOutlineLocationMarker
               style={{ fontSize: 20, color: "white", alignSelf: "center" }}
@@ -54,10 +78,15 @@ const NavBar = () => {
         <GiHamburgerMenu
           style={{ fontSize: 40, marginLeft: 15 }}
           className="menu-icon"
+          onClick={handleMenuIcon}
         />
         <section className="info">
-          <span className="services">Services</span>
-          <span className="contact">Contact</span>
+          <span className="services" onClick={handleServicesClick}>
+            Services
+          </span>
+          <span className="contact" onClick={handleContactClick}>
+            Contact
+          </span>
         </section>
       </div>
     </div>
