@@ -1,0 +1,44 @@
+.services-page-component {
+    
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    margin: auto;
+    gap: 40px;
+    height: 550px;
+    padding-top: 45px;
+    color: rgb(117, 28, 28);
+
+    .services-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 100px;
+        max-width: 690px;
+        margin: auto;
+        
+        .detail-container {
+            
+            display: flex;
+            flex-direction: row;
+            width: 48%;
+            justify-content: space-between;
+            max-width: 220px;
+            
+            .icon {
+                width:25%;
+                padding-top: 10px;
+            }
+
+            .detail {
+                padding-top: 19px;
+                font-family: 'Roboto', sans-serif;
+                width: 70%;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+    
+    
+}

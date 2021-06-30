@@ -1,0 +1,101 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    margin: auto;
+    //height: 550px;
+    .title{
+        font-size: 21px;
+        font-weight: 700;
+        text-align: left;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        height: 500px;
+        padding-bottom: 15px;
+
+        .form {
+            border-radius: 3px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 10px;
+
+            .submit-button {
+                width: 35%;
+                align-self: flex-end;
+            }
+            
+        }
+        .static-contact {
+            border-radius: 3px;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 250px;
+        
+
+            .time {
+                border : 2px solid black;
+                height: 25%;
+                background-color: whitesmoke;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 15px;
+                
+                .icon {
+                    width:25%;
+                    padding-top: 10px;
+                }
+                
+                .support-duration {
+                    width: 70%;
+                    padding-top: 10px;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: x-large;
+                }
+            }
+            
+            .details {
+                border : 2px solid black;
+                height: 70%;
+                background-color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 15px;
+                
+                .specific-details {
+                    
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    height: 28%;
+                    
+                    .icon {
+                        width:25%;
+                        padding-top: 10px;
+                    }
+                    
+                    .detail {
+                        padding-top: 25px;
+                        font-family: 'Roboto', sans-serif;
+                        width: 70%;
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+        }
+    }
+}

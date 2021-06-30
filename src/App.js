@@ -7,10 +7,7 @@ import Services from "./components/services/services";
 import NavBar from "./components/nav-bar/nav-bar";
 import LandingPage from "./pages/landing-page/landing-page";
 
-const App = ({ showMenu, showServices, showContact }) => {
-  console.log(showMenu);
-  console.log(showServices);
-  console.log(showContact);
+const App = () => {
   return (
     <div className="App">
       <NavBar />

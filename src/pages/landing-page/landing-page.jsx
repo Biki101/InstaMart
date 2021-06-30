@@ -1,6 +1,10 @@
 import React from "react";
 import "./landing-page.scss";
 import service from "../../assets/service.png";
+import hood from "../../assets/hood.png";
+import jacket from "../../assets/jackets.png";
+import jeans from "../../assets/jeans.png";
+import sneakers from "../../assets/sneakers.png";
 import { Button } from "react-bootstrap";
 
 const LandingPage = () => {
@@ -17,10 +21,10 @@ const LandingPage = () => {
         <img src={service} alt="service" />
       </div>
       <div className="image-section">
-        <img src={service} alt="service" />
-        <img src={service} alt="service" />
-        <img src={service} alt="service" />
-        <img src={service} alt="service" />
+        <img src={hood} alt="service" />
+        <img src={jacket} alt="service" />
+        <img src={jeans} alt="service" />
+        <img src={sneakers} alt="service" />
       </div>
     </div>
   );
