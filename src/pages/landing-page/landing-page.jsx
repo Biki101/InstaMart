@@ -1,11 +1,9 @@
 import React from "react";
 import "./landing-page.scss";
 import service from "../../assets/service.png";
-import hood from "../../assets/hood.png";
-import jacket from "../../assets/jackets.png";
-import jeans from "../../assets/jeans.png";
-import sneakers from "../../assets/sneakers.png";
+import { sections } from "../../data/10.1 directory.data.js";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -15,16 +13,18 @@ const LandingPage = () => {
           <span className="name">ChapChap Store</span>
           <p className="objective">Free And Easy Delivery</p>
           <Button variant="outline-dark" className="start-button">
-            Start Shopping
+            <Link className="link" to="/directory">
+              Start Shopping
+            </Link>
           </Button>
         </div>
         <img src={service} alt="service" />
       </div>
       <div className="image-section">
-        <img src={hood} alt="service" />
-        <img src={jacket} alt="service" />
-        <img src={jeans} alt="service" />
-        <img src={sneakers} alt="service" />
+        <img src={sections[0].imageUrl} alt="service" />
+        <img src={sections[1].imageUrl} alt="service" />
+        <img src={sections[2].imageUrl} alt="service" />
+        <img src={sections[3].imageUrl} alt="service" />
       </div>
     </div>
   );
