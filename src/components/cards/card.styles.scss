@@ -1,0 +1,49 @@
+.cards {
+
+    border: 2px solid black;
+    width: 90%;
+    margin: 0;
+    border: 3px solid rgb(129, 68, 88);
+    background-color: rgba(229, 229, 168, 0.264);
+    border-radius: 5px 5px 3px 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    
+    .items {
+        object-fit: cover;
+        border-radius: 5px 5px 0px 0px;
+        width: 100%;
+        height: 80%;
+    }
+    
+    .card-details {
+        @media screen and (max-width: 720px) {
+            height: 50%;
+         }
+    
+         .card-title-price {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             margin: 5px 4px 5px 4px;
+
+             .card-title {
+                 font-weight: 900; 
+             }
+
+             .card-price{
+                 font-weight: 600;
+                 color: rgb(20, 99, 20);
+             }
+         }
+
+         .add-button {
+             width: 100%;
+             background-color: whitesmoke;
+             color:black;
+             border-radius: 3px;
+
+         }
+        }
+}

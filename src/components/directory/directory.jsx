@@ -6,7 +6,6 @@ import Nav from "react-bootstrap/Nav";
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 const Directory = () => {
-  const directory = ["hats", "sneakers", "jackets", "womens", "mens"];
   const [currentDirectory, setCurrentDirectory] = useState("hats");
   const handleClickHats = () => {
     setCurrentDirectory("hats");
@@ -56,11 +55,13 @@ const Directory = () => {
         </Nav>
       </Container>
 
-      {SHOP_DATA.filter(
-        (category) => currentDirectory === category.routeName
-      ).map((details) =>
-        details.items.map((item) => <Cards key={item.id} item={item} />)
-      )}
+      <div className="cards-container">
+        {SHOP_DATA.filter(
+          (category) => currentDirectory === category.routeName
+        ).map((details) =>
+          details.items.map((item) => <Cards key={item.id} item={item} />)
+        )}
+      </div>
     </div>
   );
 };

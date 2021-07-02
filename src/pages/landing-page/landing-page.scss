@@ -6,7 +6,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 25px;
-
+        
         .title {
             width: 48%;
             margin: auto;
@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
+            
             .name {
                 font-size: 300%;
                 font-weight: 900;
@@ -30,21 +30,25 @@
                 font-family: 'Dancing Script', cursive;
                 padding: 10px;
             }
-
+            
             .start-button {
-               width: fit-content;
-               margin: auto;
-               padding: 15px;
-               border-radius: 60px;
-               border: 3px solid black;
-               background-color: rgba(255, 166, 0, 0.51);
-               font-weight: 800;
-               cursor: pointer; 
-               color: black;
-
-               .link {
-                   color: black;
-               }
+                width: fit-content;
+                margin: auto;
+                padding: 15px;
+                border-radius: 60px;
+                border: 3px solid black;
+                background-color: rgba(255, 166, 0, 0.51);
+                font-weight: 800;
+                cursor: pointer; 
+                color: black;
+                
+                .link {
+                    color: black;
+                }
+                
+            }
+            .start-button:hover {
+                border: 5px solid black;
             }
             
         }
@@ -54,6 +58,10 @@
             border-radius: 8px;
             width: 50%;
             max-width: 500px;
+        }
+        
+        img:hover {
+            border: 7px solid black;
         }
         
         border-bottom: 5px solid rgb(61, 10, 33);
@@ -73,6 +81,10 @@
             background-color: palevioletred;
             border-radius: 8px;
             cursor: pointer; 
+        }
+        img:hover {
+            border: 7px solid black;
+            background-color: black;
         }
     }
 }
