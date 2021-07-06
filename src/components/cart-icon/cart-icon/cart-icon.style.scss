@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: whitesmoke;
 
     .item-count {
         position: absolute;
@@ -16,4 +17,7 @@
         padding-left: 1px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+}
+.cart-icon:hover {
+    color: pink;
 }

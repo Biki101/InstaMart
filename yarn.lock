@@ -10805,6 +10805,11 @@ redux-logger@^3.0.6:
   dependencies:
     deep-diff "^0.3.5"
 
+redux-persist@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-6.0.0.tgz#b4d2972f9859597c130d40d4b146fecdab51b3a8"
+  integrity sha512-71LLMbUq2r02ng2We9S215LtPu3fY0KgaGE0k8WRgl6RkqxtGfl7HUozz1Dftwsb0D/5mZ8dwAaPbtnzfvbEwQ==
+
 redux-saga@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-1.1.3.tgz#9f3e6aebd3c994bbc0f6901a625f9a42b51d1112"
@@ -11386,6 +11391,11 @@ semantic-ui-react@^2.0.3:
     react-is "^16.8.6 || ^17.0.0"
     react-popper "^2.2.4"
     shallowequal "^1.1.0"
+
+semantic-ui-sidebar@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/semantic-ui-sidebar/-/semantic-ui-sidebar-2.3.1.tgz#1d52b36e3e62f432cd8b776d66f75f68b1b5976f"
+  integrity sha512-9zCSkuspHXwC+o41eYazI8+uXFaJjfrjPH4iJVFMWvUuoJ21L2EM4MceR7BAZ9ybbf+yriTTD/Z7KkEzoYi29Q==
 
 semver-greatest-satisfied-range@^1.1.0:
   version "1.1.0"

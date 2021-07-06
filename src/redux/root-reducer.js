@@ -1,8 +1,16 @@
 import { combineReducers } from "redux";
-import toogleReducer from "./toggle/toggle-reducer";
+import persistReducer from "redux-persist/es/persistReducer";
+import cartReducer from "./cart/cart-reducer";
+import storage from "redux-persist/lib/storage";
+
+const persistConfig = {
+  key: "root",
+  storage,
+  whitelist: ["cart"],
+};
 
 const rootReducer = combineReducers({
-  toggle: toogleReducer,
+  cart: cartReducer,
 });
 
-export default rootReducer;
+export default persistReducer(persistConfig, rootReducer);

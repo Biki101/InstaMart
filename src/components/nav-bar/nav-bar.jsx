@@ -4,15 +4,11 @@ import logo from "../../assets/logo.png";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Search } from "semantic-ui-react";
 import CartIcon from "../cart-icon/cart-icon/cart-icon.component";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { useHistory } from "react-router-dom";
+import { CgHomeAlt } from "react-icons/cg";
+import { Link, useHistory } from "react-router-dom";
 
 const NavBar = () => {
   const history = useHistory();
-
-  const handleMenuIcon = () => {
-    history.push("/menu");
-  };
 
   const handleContactClick = () => {
     history.push("/contact");
@@ -72,13 +68,15 @@ const NavBar = () => {
             </Grid.Column>
           </Grid> */}
         </div>
-        <CartIcon className="cart-icon" />
+        <Link to="/cart">
+          <CartIcon className="cart-icon" />
+        </Link>
       </div>
       <div className="nav-row">
-        <GiHamburgerMenu
+        <CgHomeAlt
           style={{ fontSize: 40, marginLeft: 15 }}
           className="menu-icon"
-          onClick={handleMenuIcon}
+          onClick={handleLogoClick}
         />
         <section className="info">
           <span className="services" onClick={handleServicesClick}>
